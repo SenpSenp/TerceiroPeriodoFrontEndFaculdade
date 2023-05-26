@@ -1,82 +1,84 @@
-import React, { useState } from 'react';
 import "./Perfil.css"
-
+import React from "react";
 
 const Perfil = () => {
-  const [nome, setNome] = useState('');
-  const [email, setEmail] = useState('');
-  const [endereco, setEndereco] = useState('');
-  const [mostrarCarrinho, setMostrarCarrinho] = useState(false);
-  const [mostrarEnderecos, setMostrarEnderecos] = useState(false);
-  const [mostrarHistoricoCompras, setMostrarHistoricoCompras] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const AguardandoPagamento = () => {
+    return (
+      <div>
+        <h6>Pedido Aguardando Pagamento</h6>
+        {/* Conteúdo  */}
+      </div>
+    );
+  };
+  
+ 
+  const AguardandoEnvio = () => {
+    return (
+      <div>
+        <h6>Pedido Aguardando Envio</h6>
+        {/* Conteúdo  */}
+      </div>
+    );
+  };
+  
+ 
+  const Enviado = () => {
+    return (
+      <div>
+        <h6>Pedido Enviado</h6>
+        {/* Conteúdo  */}
+      </div>
+    );
+  };
+  
 
-    console.log("Dados do perfil enviados:", { nome, email, endereco });
+  const AguardandoAvaliacao = () => {
+    return (
+      <div>
+        <h6>Pedido Aguardando Avaliação</h6>
+        {/* Conteúdo  */}
+      </div>
+    );
   };
 
   return (
-    <div className="container">
-      <h2>Meu perfil</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="nome">Nome:</label>
-          <input
-            type="text"
-            className="form-control"
-            id="nome"
-            value={nome}
-            onChange={(event) => setNome(event.target.value)}
-          />
+    <div className="container-fluid" style={{ marginTop: "20px" }}>
+      <div className="row">
+        <div className="col-md-4" style={{ height: "300px" }}>
+          <div className="card" style={{ height: "90%", marginBottom: "20px" }}>
+            <div className="card-body">
+              <h5 className="card-title" style={{ fontSize: "18px", fontWeight: "bold" }}>
+                Nome de perfil
+              </h5>
+              <div>
+                <button className="btn btn-primary">{AguardandoPagamento} Aguardando Pagamento</button>
+                <button className="btn btn-primary">{AguardandoEnvio} Aguardando Envio</button>
+                <button className="btn btn-primary">{Enviado}Enviado</button>
+                <button className="btn btn-primary">{AguardandoAvaliacao}Aguardando Avaliação</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            className="form-control"
-            id="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-          />
+        <div className="col-md-4">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Divisão 2</h5>
+              <p className="card-text">Conteúdo da Divisão 2</p>
+            </div>
+          </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="endereco">Endereço:</label>
-          <textarea
-            className="form-control"
-            id="endereco"
-            value={endereco}
-            onChange={(event) => setEndereco(event.target.value)}
-          ></textarea>
+        <div className="col-md-4">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Divisão 3</h5>
+              <p className="card-text">Conteúdo da Divisão 3</p>
+            </div>
+          </div>
         </div>
-        <button type="submit" className="btn btn-primary">Salvar</button>
-      </form>
-
-      <div className="mt-4">
-        <button className="btn btn-primary mr-2" onClick={() => setMostrarCarrinho(!mostrarCarrinho)}>Carrinho</button>
-        <button className="btn btn-primary mr-2" onClick={() => setMostrarEnderecos(!mostrarEnderecos)}>Meus Endereços</button>
-        <button className="btn btn-primary" onClick={() => setMostrarHistoricoCompras(!mostrarHistoricoCompras)}>Histórico de Compras</button>
       </div>
-
-      {mostrarCarrinho && (
-        <div className="mt-4">
-          {/* Conteúdo  */}
-        </div>
-      )}
-
-      {mostrarEnderecos && (
-        <div className="mt-4">
-          {/* Conteúdo  */}
-        </div>
-      )}
-
-      {mostrarHistoricoCompras && (
-        <div className="mt-4">
-          {/* Conteúdo */}
-        </div>
-      )}
     </div>
   );
-}
+};
 
 export default Perfil;
