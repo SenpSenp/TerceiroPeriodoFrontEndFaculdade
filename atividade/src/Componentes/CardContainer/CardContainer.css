@@ -1,0 +1,12 @@
+.cardsContainer {
+    border: 4px double black;
+    background-color: rgba(85, 55, 183, 0.496);
+    margin: 0 auto;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 6px 6px 6px rgba(22, 21, 21, 0.258);
+    align-items: flex-start;
+  }
+  
