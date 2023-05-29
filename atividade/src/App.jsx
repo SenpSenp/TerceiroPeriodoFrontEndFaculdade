@@ -1,17 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home } from './Telas/Home/Home';
+import { CardContainer } from './Componentes/CardContainer/CardContainer';
 import { Carrossel } from './Componentes/Carrossel/Carrossel';
 
 const App = () => {
-  const imagens = [
-    '/imagens/imagem1.jpg',
-    '/imagens/imagem2.jpg',
-  ];
-
   return (
-    <div>
-      <h1>Meu Carrossel de Imagens</h1>
-      <Carrossel imagens={imagens} />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/card-container" component={CardContainer} />
+        <Route path="/carrossel" component={Carrossel} />
+      </Switch>
+    </Router>
   );
 };
 
