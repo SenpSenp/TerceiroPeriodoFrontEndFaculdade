@@ -5,7 +5,7 @@ import { Carrossel } from '../../Componentes/Carrossel/Carrossel';
 import { Card } from '../../Componentes/Card/Card'
 
 
-export const Home = () => {
+export const TelaHome = () => {
   return (
     <div>
       <Carrossel />
