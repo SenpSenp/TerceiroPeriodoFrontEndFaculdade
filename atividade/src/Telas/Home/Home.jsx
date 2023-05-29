@@ -11,7 +11,6 @@ export const Home = () => {
       <Carrossel />
       <CardContainer>
         <Card texto="Placa de video teste 123" imagem={img1} valor="420,69">
-          <span>Informação para ficar dentro da caixa, adicionar imagem aqui também</span>
         </Card>
       </CardContainer>
     </div>
