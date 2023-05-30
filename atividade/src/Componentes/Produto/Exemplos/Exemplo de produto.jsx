@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductDetails from '../Componentes/ProductDetails';
+import ProductDetails from '../ProductDetails';
 
 function App() {
   const product = {
