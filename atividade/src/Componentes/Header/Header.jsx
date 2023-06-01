@@ -10,12 +10,12 @@ const Header = ()=>{
             Home
             </NavLink>
             
-            <NavLink to="/login" exact activeClassName="active">
-            Login
+            <NavLink to="/produto" exact activeClassName="active">
+            Produto
             </NavLink>
 
-            <NavLink to="/cadastro" exact activeClassName="active">
-            Cadastro
+            <NavLink to="/Login" exact activeClassName="active">
+            Login
             </NavLink>
             
             
