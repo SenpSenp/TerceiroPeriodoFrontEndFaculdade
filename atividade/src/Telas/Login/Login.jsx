@@ -1,13 +1,17 @@
-import React from 'react';
-import Login from '../../Componentes/Login/Login';
-import Header from '../../Componentes/Header/Header';
+import { Login } from "../../Service/Service"
+import Header from "../../Componentes/Header/Header"
 
-export const TelaLogin = () => {
-  return (
-    <div>
-      <Header/>
-        <h1>Tela de Login</h1>
-        <Login/>
+
+export const TelaLogin = () =>{
+    return(
+    <div className='d-flex flex-column'>
+
+        <div className='row flex-grow-1 g-0'>
+            <div className='col-12'>
+              <Header/>
+              <Login/>
+            </div>       
+        </div>
     </div>
-  );
-};
+    )
+}
