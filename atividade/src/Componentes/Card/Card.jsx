@@ -3,13 +3,13 @@ import './Card.css';
 
 export const Card = ({ imagem, texto, valor }) => {
   return (
-    <div className="card">
+    <div className="caard">
       <img src={imagem} alt="Imagem do Produto" />
-      <div className="card-text">
+      <div className="caard-text">
         <p>{texto}</p>
-        <p className="card-value">R$: <span>{valor}</span></p>
+        <p className="caard-value">R$: <span>{valor}</span></p>
       </div>
-      <button className="card-button">Comprar</button>
+      <button className="caard-button">Comprar</button>
     </div>
   );
 };

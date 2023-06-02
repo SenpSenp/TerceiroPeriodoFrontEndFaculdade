@@ -4,7 +4,9 @@ import Header from '../../Componentes/Header/Header';
 
 export const TelaPerfil = () => {
     return (
-        <Header/>
-        <Perfil/>
+        <div>
+            <Header/>
+            <Perfil/>
+        </div>
     )
-}
+};

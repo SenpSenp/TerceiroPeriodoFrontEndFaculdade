@@ -1,4 +1,4 @@
-.card {
+.caard {
   border: 2px solid black;
   border-radius: 8px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.card img {
+.caard img {
   width: 100%;
   max-width: 200px;
   height: auto;
@@ -17,11 +17,11 @@
   border-radius: 8px;
 }
 
-.card-text {
+.caard-text {
   margin-top: 10px;
 }
 
-.card-button {
+.caard-button {
   margin-top: 10px;
   padding: 8px 16px;
   background-color: #0080ff;
@@ -31,20 +31,20 @@
   cursor: pointer;
 }
 
-.card-button:hover {
+.caard-button:hover {
   background-color: #0066cc;
 }
 
-.card-button:focus {
+.caard-button:focus {
   outline: none;
 }
 
-.card-value {
+.caard-value {
   font-size: 18px;
   font-weight: bold;
   color: black;
 }
 
-.card-value span {
+.caard-value span {
   color: red;
 }
