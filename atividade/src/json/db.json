@@ -1,0 +1,84 @@
+{
+  "Usuarios": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "admin": true,
+      "nome": "Shrek, o poderoso admin rei supremo",
+      "token": "8Yz*4$aB#%2&@1!"
+    },
+    {
+      "id": 2,
+      "username": "J0hn",
+      "password": "123",
+      "admin": false,
+      "nome": "John",
+      "token": "#$6F*!N9D7@2X1@"
+    },
+    {
+      "id": 3,
+      "username": "M4ri4",
+      "password": "123",
+      "admin": false,
+      "nome": "Maria",
+      "token": "L6$3M#8*1F!2V@"
+    },
+    {
+      "id": 4,
+      "username": "R0b3rt",
+      "password": "123",
+      "admin": false,
+      "nome": "Robert",
+      "token": "9G#5S1$@6&*T3B"
+    },
+    {
+      "id": 5,
+      "username": "St3v3",
+      "password": "123",
+      "admin": false,
+      "nome": "Steve",
+      "token": "*N5B2$G@9#*!X6"
+    },
+    {
+      "id": 6,
+      "username": "Br14n",
+      "password": "123",
+      "admin": false,
+      "nome": "Brian",
+      "token": "1Q#3L*6@P4!D8F"
+    },
+    {
+      "id": 7,
+      "username": "K4th3ryn",
+      "password": "123",
+      "admin": false,
+      "nome": "Katheryn",
+      "token": "!4L#6*8@2D#P9R"
+    },
+    {
+      "id": 8,
+      "username": "R1ch4rd",
+      "password": "123",
+      "admin": false,
+      "nome": "Richard",
+      "token": "M7@2T1!8&*G#K4"
+    },
+    {
+      "id": 9,
+      "username": "Tr3v0r",
+      "password": "123",
+      "admin": false,
+      "nome": "Trevor",
+      "token": "$1A5#*6!2H@8M3"
+    },
+    {
+      "id": 10,
+      "username": "Br3nd4",
+      "password": "123",
+      "admin": false,
+      "nome": "Brenda",
+      "token": "@8H3!5*9M$1P2"
+    }
+  ]
+}
