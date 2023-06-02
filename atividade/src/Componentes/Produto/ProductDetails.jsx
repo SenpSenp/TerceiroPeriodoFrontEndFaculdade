@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { CarrinhoContext } from './../../Telas/Carrinhocompras/CarrinhoContext';
 import { Row, Col, Image, Form, Button } from 'react-bootstrap';
 import './ProductDetails.css';
 
+
 function ProductDetails({ product }) {
   const [quantity, setQuantity] = useState(1);
+  const { adicionarAoCarrinho } = useContext(CarrinhoContext);
 
   function handleQuantityChange(e) {
     setQuantity(e.target.value);
   }
 
   function handleAddToCart() {
-    // Add the product and the selected quantity to the cart
+    adicionarAoCarrinho(product, quantity); 
   }
 
   return (

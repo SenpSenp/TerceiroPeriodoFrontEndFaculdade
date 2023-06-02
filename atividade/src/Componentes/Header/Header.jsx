@@ -18,6 +18,11 @@ const Header = ()=>{
             Login
             </NavLink>
             
+            {/* Talvez pegar uma png de carrinho pra substituir a palavra  carrinho de compras */}
+            <NavLink to="/carrinho" activeClassName="active">
+            Carrinho de Compras
+            </NavLink>
+      
             
            
         
