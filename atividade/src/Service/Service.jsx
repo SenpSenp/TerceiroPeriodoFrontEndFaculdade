@@ -18,7 +18,7 @@ export const Login = () => {
       const user = data.find((user) => user.username === form.login && user.password === form.senha);
       
       if (user) {
-        toast.success('Login bem-sucedido!', {
+        toast.success('Login bem-sucedido! Bem vindo Shrek, o admin', {
           onClose: () => {
             history.push('/');
           }

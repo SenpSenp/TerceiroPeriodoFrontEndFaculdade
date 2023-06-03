@@ -12,8 +12,11 @@ export const TelaHome = () => {
       <Header/>
       <Carrossel />
       <CardContainer>
-        <Card texto="Placa de video teste 123" imagem={img1} valor="420,69">
-        </Card>
+        <Card texto="Placa de video teste 123" imagem={img1} valor="420,69"/>
+        <Card texto="Placa de video teste 456" imagem={img1} valor="420,69"/>
+        <Card texto="Placa de video teste 789" imagem={img1} valor="420,69"/>
+        <Card texto="Placa de video teste 147" imagem={img1} valor="420,69"/>
+        <Card texto="Placa de video teste 258" imagem={img1} valor="420,69"/>
       </CardContainer>
     </div>
   );
