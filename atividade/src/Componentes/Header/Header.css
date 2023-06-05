@@ -35,13 +35,6 @@
     width: 60px;
 }
 
-.imgC {
-    display: flex;
-    margin-left: auto;
-    margin-right: 150px;
-    width: 60px;
-
-}
 .imgP {
     display: flex;
     margin-left: auto;
@@ -83,5 +76,15 @@
     color: #ffa500;
     margin-left: 12px;
     font-size: 14px;
+    max-width: 200px;
   }
   
+  .sair-button {
+    border-radius: 0 5px 5px 0;
+    background-color: #00008b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+  }
