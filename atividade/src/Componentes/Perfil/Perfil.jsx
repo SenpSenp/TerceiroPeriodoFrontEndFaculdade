@@ -1,8 +1,10 @@
 import React from "react";
 import foto from "./foto/fotoPerfil.png";
-import "./Perfil.css"
+import "./Perfil.css";
 
-const Perfil = () => {
+const Perfil = ({ usuarioConectado }) => {
+  const nomeUsuario = usuarioConectado?.nome || "";
+
   return (
     <div className="container-fluid mt-3">
       <div className="row">
@@ -10,7 +12,9 @@ const Perfil = () => {
           <div className="card" style={{ height: "200px", marginBottom: "40px" }}>
             <div className="card-body">
               <img src={foto} alt="Imagem" style={{ width: "90px" }} />
-              <p style={{ fontSize: "18px", fontWeight: "bold" }}>Bem-vindo, (nome do usuário)</p>
+              <p style={{ fontSize: "18px", fontWeight: "bold" }}>
+                Bem-vindo, {nomeUsuario}
+              </p>
             </div>
           </div>
         </div>

@@ -26,7 +26,9 @@ const Header = ({ usuarioConectado, handleLogout }) => {
             <button type="submit">Buscar</button>
           </div>
 
+          <NavLink to="/perfil" exact activeClassName="active">
           <img className="imgP" src={fotoPerfil} alt="Imagem" />
+          </NavLink>
 
           <p className="usuario">
             Bem-vindo, <br />
