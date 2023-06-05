@@ -1,5 +1,13 @@
-.Footer_container{
-    background-color: #107738;
-    padding: 20px;
-    margin-top: 49px;
+.footer-text {
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-container {
+  position: relative;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin-top: 80px;
 }

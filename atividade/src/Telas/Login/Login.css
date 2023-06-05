@@ -1,0 +1,25 @@
+.login-clContainerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    min-width: 60vw;
+  }
+  
+  .login-clContainer {
+    width: 18rem;
+    text-align: center;
+  }
+  
+  .login-btn {
+    margin-top: 10px;
+    font-size: 15px;
+    width: auto; 
+    height: auto;
+  }
+  
+  .error-message {
+    font-weight: bold;
+    color: red;
+    font-size: 15px;
+  }
