@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "RTX 4090 GALAX",
+      "price": 10999.99,
+      "image": "https://cdn.awsli.com.br/400x400/141/141286/produto/200914964b087d1b643.jpg",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    },
+    {
+      "id": 2,
+      "name": "RTX 4080 Galax",
+      "price": 9999.99,
+      "image": "https://images.kabum.com.br/produtos/fotos/397579/placa-de-video-galax-geforce-rtx-4080-16-gb-gddr6x-rgb-48nzm6md6lsg-_1666993530_g.jpg",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    },
+    {
+      "id": 3,
+      "name": "RTX 4070 Ti Galax",
+      "price": 7099.99,
+      "image": "https://images.kabum.com.br/produtos/fotos/404447/placa-de-video-rtx-4070-ti-st-pci-e-galax-16-gb-gddr6x-256bit-47iom7md6tts_1672845537_g.jpg",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    },
+    {
+      "id": 4,
+      "name": "RTX 4070 Galax",
+      "price": 6099.99,
+      "image": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/457920/Placa-De-V-deo-Galax-NVIDIA-GeForce-RTX-4070-12GB-GDDR6X-Ex-Gamer-White-47NOM7MD7KWH_1685555296_gg.jpg",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    },
+    {
+      "id": 5,
+      "name": "RTX 4060 Ti Galax",
+      "price": 3289.99,
+      "image": "https://images.kabum.com.br/produtos/fotos/462198/placa-de-video-rtx-4060-ti-ex-galax-nvidia-geforce-8-gb-gddr6-dlss-ray-tracing-46isl8md8aex_1684873456_gg.jpg",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    },
+    {
+      "id": 6,
+      "name": "RTX 3090 Ti Galax",
+      "price": 10499.99,
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTe4KyTdSOiJyrMxRGAgEu0bRxofogMOv3PiGggr_iuQ7ZQ1EycV62dY0IQ8NCbZH35Vs6seMjl5z8fwIcKek1VCA1VDk1l2rw6MBP5aYX5d6lTnDAmok1RRQ&usqp=CAE",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    },
+    {
+      "id": 7,
+      "name": "RTX 3090 Galax",
+      "price": 9999.99,
+      "image": "https://http2.mlstatic.com/D_NQ_NP_914308-MLA52386185464_112022-O.webp",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    },
+    {
+      "id": 8,
+      "name": "RTX 3080 Ti Galax",
+      "price": 8999.99,
+      "image": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/172558/Placa-de-V-deo-Galax-NVIDIA-GeForce-RTX-3080-TI-SG-12GB-GDDR6X-1-Click-OC-38IOM5MD99DD_1674571114_gg.jpg",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    },
+    {
+      "id": 9,
+      "name": "RTX 3080 Galax",
+      "price": 5999.99,
+      "image": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/275678/Placa-de-V-deo-Galax-NVIDIA-GeForce-RTX-3080-Serious-Gaming-10GB-LHR-RGB-DLSS-Ray-Tracing-38NWM3MD99RG_1675188515_gg.jpg",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    },
+    {
+      "id": 10,
+      "name": "RTX 3070 Galax",
+      "price": 3899.99,
+      "image": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/256200/Placa-de-V-deo-Galax-NVIDIA-GeForce-RTX-3070-8GB-RAM-LHR-1-Click-OC-37NSL6MD2KCH_1683547283_gg.jpg",
+      "description": "Características:\n- Marca: Galax\n- Modelo: 49NXM5MD6DSG\nEspecificações:\nEspecificações do mecanismo de GPU:\n- Núcleos CUDA: 16384\n- Boost Clock: 2580 MHz\n- 1-Click OC Clock: 2595MHz (instalando o software Xtreme Tuner Plus e usando 1-Click OC)\nEspecificações de memória:\n- Velocidade da Memória: 21 Gbps\n- Configuração de memória padrão: 24 GB\n- Largura da interface de memória GDDR6X de 384 bits\n- Largura de banda da memória: 1008 GB/s\nSuporte a recursos:\n- PCI-E 4.0\n- Windows 10/11 64 bits\nCaracterística do ventilador:\n- 3 * 102 milímetros\n- WING 2.0 com parada do ventilador @ Idle (todos os ventiladores)\nSuporte de exibição:\n- 3x DisplayPort 1.4a\n- 1x HDMI 2.1\nDimensões:\n- Dimensões (sem suporte): 336 * 138 * 74 mm\n- Dimensões (com suporte): 352 * 153 * 74 mm"
+    }
+  ]
+  

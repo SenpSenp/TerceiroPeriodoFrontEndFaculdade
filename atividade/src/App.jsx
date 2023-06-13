@@ -4,7 +4,7 @@ import Header from './Componentes/Header/Header';
 import Footer from './Componentes/Footer/Footer';
 import { TelaHome } from './Telas/Home/Home';
 import { TelaLogin } from './Telas/Login/Login';
-import { TelaProduto } from './Telas/Produto/Produto';
+import TelaProduto from './Telas/Produto/Produto';
 import { TelaPerfil } from './Telas/Perfil/Perfil';
 
 const App = () => {
@@ -25,7 +25,7 @@ const App = () => {
           path="/login"
           render={() => <TelaLogin setUsuarioConectado={setUsuarioConectado} />}
         />
-        <Route exact path="/produto" component={TelaProduto} />
+        <Route exact path="/produto/:id" component={TelaProduto} />
         <Route exact path="/perfil" component={TelaPerfil} />
       </Switch>
 

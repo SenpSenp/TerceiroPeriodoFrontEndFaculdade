@@ -27,7 +27,7 @@ function ProductDetails({ product }) {
             <Form.Control type="number" value={quantity} onChange={handleQuantityChange} className="product-quantity" />
           </Form.Group>
         </Form>
-        <p className="product-price">Preço: <span className="price-value">{product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span></p>
+        <p className="product-price">Preço: {product.price}</p>
         <Button variant="primary" onClick={handleAddToCart} className="product-button">Adicionar ao carrinho</Button>
 
       </Col>
