@@ -57,12 +57,11 @@ const Header = ({ usuarioConectado, handleLogout }) => {
 
           <NavLink to="/Login" exact activeClassName="active">
             Login
-          </NavLink>
-
-          <div className="search-container">
-            <input type="text" placeholder="Pesquisar" />
-            <button type="submit">Buscar</button>
-          </div>
+            </NavLink>
+            
+            
+           
+        
         </div>
       );
     }
