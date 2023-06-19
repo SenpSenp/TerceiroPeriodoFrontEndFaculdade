@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { CarrinhoProvider } from './CarrinhoContext';
+import Header from './Componentes/Header/Header';
+import Footer from './Componentes/Footer/Footer';
 import { TelaHome } from './Telas/Home/Home';
 import { TelaLogin } from './Telas/Login/Login';
-import { TelaProduto } from './Telas/Produto/Produto';
-import Carrinho from './Telas/Carrinhocompras/Carrinho';
+import TelaProduto from './Telas/Produto/Produto';
+import { TelaPerfil } from './Telas/Perfil/Perfil';
 
 const App = () => {
   const [usuarioConectado, setUsuarioConectado] = useState(null);
@@ -15,14 +16,20 @@ const App = () => {
 
   return (
     <Router>
-      <CarrinhoProvider>
-        <Switch>
-          <Route exact path="/" component={TelaHome} />
-          <Route exact path="/login" component={TelaLogin} />
-          <Route exact path="/produto" component={TelaProduto} />
-          <Route exact path="/carrinho" component={Carrinho} /> {/* Adicionando a rota do Carrinho */}
-        </Switch>
-      </CarrinhoProvider>
+      <Header usuarioConectado={usuarioConectado} handleLogout={handleLogout} />
+
+      <Switch>
+        <Route exact path="/" component={TelaHome} />
+        <Route
+          exact
+          path="/login"
+          render={() => <TelaLogin setUsuarioConectado={setUsuarioConectado} />}
+        />
+        <Route exact path="/produto/:id" component={TelaProduto} />
+        <Route exact path="/perfil" component={TelaPerfil} />
+      </Switch>
+
+      <Footer />
     </Router>
   );
 };
