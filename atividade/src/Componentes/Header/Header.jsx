@@ -38,7 +38,6 @@ const Header = ({ usuarioConectado, handleLogout }) => {
           <button className="sair-button" onClick={handleLogout}>
             Sair
           </button>
-
         </div>
       );
     } else {
