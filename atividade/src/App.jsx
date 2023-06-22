@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route, useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useHistory, Redirect } from 'react-router-dom';
 import Header from './Componentes/Header/Header';
 import Footer from './Componentes/Footer/Footer';
 import { TelaHome } from './Telas/Home/Home';
@@ -12,7 +12,20 @@ const App = () => {
 
   const handleLogout = () => {
     setUsuarioConectado(null);
-    };
+  };
+
+  const PrivateRoute = ({ component: Component, ...rest }) => (
+    <Route
+      {...rest}
+      render={props =>
+        usuarioConectado ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to="/login" />
+        )
+      }
+    />
+  );
 
   return (
     <Router>
@@ -22,7 +35,7 @@ const App = () => {
         <Route exact path="/" component={TelaHome} />
         <Route exact path="/login" render={() => <TelaLogin setUsuarioConectado={setUsuarioConectado} />} />
         <Route exact path="/produto/:id" component={TelaProduto} />
-        <Route exact path="/perfil" render={() => <TelaPerfil usuarioConectado={usuarioConectado} />} />
+        <PrivateRoute exact path="/perfil" component={TelaPerfil} />
 
       </Switch>
 
