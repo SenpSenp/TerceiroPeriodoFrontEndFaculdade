@@ -120,3 +120,15 @@
 .text1 {
   font-weight: bold;
 }
+
+.button-editar-cadastro {
+  font-size: 20px;
+  color: #bb7e0d;
+  cursor: pointer;
+}
+
+.button-editar-cadastro:hover {
+  background-color: #00008b;
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.164);
+}

@@ -1,20 +1,16 @@
 {
   "Usuarios": [
     {
-      "id": 1,
+      "nome": "Shrek, o ídolo da galera, aquele que nao dorme, faz o mundo entrar em blackout",
       "username": "admin",
       "password": "admin",
-      "admin": true,
-      "nome": "Shrek, o poderoso admin rei supremo",
-      "token": "8Yz*4$aB#%2&@1!"
+      "id": 1
     },
     {
-      "id": 2,
+      "nome": "John",
       "username": "J0hn",
       "password": "123",
-      "admin": false,
-      "nome": "John",
-      "token": "#$6F*!N9D7@2X1@"
+      "id": 2
     },
     {
       "id": 3,
@@ -78,6 +74,14 @@
       "password": "123",
       "admin": false,
       "nome": "Brenda",
+      "token": "@8H3!5*9M$1P2"
+    },
+    {
+      "id": 11,
+      "username": "",
+      "password": "",
+      "admin": false,
+      "nome": "Roger guedes, atacante mitologico",
       "token": "@8H3!5*9M$1P2"
     }
   ]

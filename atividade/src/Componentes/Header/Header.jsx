@@ -1,18 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import headerImg from './headerImg/headerImg.png';
 import fotoPerfil from '../Perfil/foto/fotoPerfil.png';
 
-const Header = ({ usuarioConectado, handleLogout }) => {
+const Header = ({ usuarioConectado, handleLogout, handleHeaderAtualizado }) => {
+  const [nomeUsuario, setNomeUsuario] = useState(usuarioConectado?.nome || 'usuário');
+
+  useEffect(() => {
+    if (usuarioConectado?.nome) {
+      setNomeUsuario(usuarioConectado.nome);
+    }
+  }, [usuarioConectado]);
+
+  const atualizarHeader = () => {
+    if (handleHeaderAtualizado) {
+      handleHeaderAtualizado();
+    }
+  };
+
   const renderHeader = () => {
     if (usuarioConectado) {
       return (
         <div className="container Header_container">
-          {/* Usuaário logado */}
+          {/* Usuário logado */}
           <a href="/" exact activeClassName="active">
             <img className="imgL" src={headerImg} alt="Imagem" />
-          </a>  
+          </a>
           <NavLink to="/" exact activeClassName="active">
             Home
           </NavLink>
@@ -27,20 +41,19 @@ const Header = ({ usuarioConectado, handleLogout }) => {
           </div>
 
           <NavLink to="/perfil" exact activeClassName="active">
-          <img className="imgP" src={fotoPerfil} alt="Imagem" />
+            <img className="imgP" src={fotoPerfil} alt="Imagem" />
           </NavLink>
 
           <p className="usuario">
             Bem-vindo, <br />
-            {usuarioConectado.nome}!
+            {nomeUsuario}!
           </p>
 
           <div>
-          <a href='/' className='sair-button'>
-          Sair
-          </a>
-        </div>
-
+            <a href="/" className="sair-button" onClick={handleLogout}>
+              Sair
+            </a>
+          </div>
         </div>
       );
     } else {
@@ -49,7 +62,7 @@ const Header = ({ usuarioConectado, handleLogout }) => {
           {/* Usuário não logado */}
           <a href="/" exact activeClassName="active">
             <img className="imgL" src={headerImg} alt="Imagem" />
-          </a>  
+          </a>
           <NavLink to="/" exact activeClassName="active">
             Home
           </NavLink>
@@ -71,7 +84,12 @@ const Header = ({ usuarioConectado, handleLogout }) => {
     }
   };
 
-  return <div>{renderHeader()}</div>;
+  return (
+    <div>
+      {renderHeader()}
+      <button onClick={atualizarHeader} style={{ display: 'none' }}></button>
+    </div>
+  );
 };
 
 export default Header;

@@ -1,6 +1,7 @@
 import React from "react";
 import foto from "./foto/fotoPerfil.png";
 import "./Perfil.css";
+import { Link  } from "react-router-dom";
 
 const Perfil = () => {
 
@@ -17,6 +18,10 @@ const Perfil = () => {
               <p style={{ fontSize: "18px", fontWeight: "bold" }}>
                 Bem-vindo, {nomeUsuario}
               </p>
+
+              <Link to="/editarcadastro">
+                <button className="button-editar-cadastro">Editar Cadastro</button>
+              </Link>
             </div>
           </div>
         </div>
