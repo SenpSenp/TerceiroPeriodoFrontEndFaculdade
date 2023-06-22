@@ -6,7 +6,7 @@ import "./Login.css"
 
 export const TelaLogin = ({ setUsuarioConectado }) => {
   const [form, setForm] = useState({ login: '', senha: '' });
-  const [loginInvalido, setLoginInvalido] = useState(false); // Estado para controlar a exibição da mensagem de erro
+  const [loginInvalido, setLoginInvalido] = useState(false);
 
   const history = useHistory();
 
@@ -27,7 +27,7 @@ export const TelaLogin = ({ setUsuarioConectado }) => {
           }
         });
       } else {
-        setLoginInvalido(true); // Atualizar o estado para mostrar a mensagem de erro
+        setLoginInvalido(true);
         console.log('Credenciais inválidas. Por favor, tente novamente.');
       }
     } catch (error) {

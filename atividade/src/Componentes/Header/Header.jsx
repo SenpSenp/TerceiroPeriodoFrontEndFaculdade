@@ -35,9 +35,11 @@ const Header = ({ usuarioConectado, handleLogout }) => {
             {usuarioConectado.nome}!
           </p>
 
-          <button className="sair-button" onClick={handleLogout}>
-            Sair
-          </button>
+          <div>
+          <a href='/' className='sair-button'>
+          Sair
+          </a>
+        </div>
 
         </div>
       );

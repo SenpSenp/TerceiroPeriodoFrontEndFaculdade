@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, useHistory } from 'react-router-dom';
 import Header from './Componentes/Header/Header';
 import Footer from './Componentes/Footer/Footer';
 import { TelaHome } from './Telas/Home/Home';
@@ -12,7 +12,7 @@ const App = () => {
 
   const handleLogout = () => {
     setUsuarioConectado(null);
-  };
+    };
 
   return (
     <Router>
