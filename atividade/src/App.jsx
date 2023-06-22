@@ -20,13 +20,10 @@ const App = () => {
 
       <Switch>
         <Route exact path="/" component={TelaHome} />
-        <Route
-          exact
-          path="/login"
-          render={() => <TelaLogin setUsuarioConectado={setUsuarioConectado} />}
-        />
+        <Route exact path="/login" render={() => <TelaLogin setUsuarioConectado={setUsuarioConectado} />} />
         <Route exact path="/produto/:id" component={TelaProduto} />
-        <Route exact path="/perfil" component={TelaPerfil} />
+        <Route exact path="/perfil" render={() => <TelaPerfil usuarioConectado={usuarioConectado} />} />
+
       </Switch>
 
       <Footer />

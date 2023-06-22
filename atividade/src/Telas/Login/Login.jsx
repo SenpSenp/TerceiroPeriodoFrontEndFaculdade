@@ -18,8 +18,10 @@ export const TelaLogin = ({ setUsuarioConectado }) => {
       const user = data.find((user) => user.username === form.login && user.password === form.senha);
 
       if (user) {
+        localStorage.removeItem('usuarioConectado');
         toast.success(`Login bem-sucedido! Bem-vindo ${user.nome}`, {
           onClose: () => {
+            localStorage.setItem('usuarioConectado', JSON.stringify(user));
             setUsuarioConectado(user);
             history.push('/');
           }

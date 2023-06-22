@@ -2,8 +2,10 @@ import React from "react";
 import foto from "./foto/fotoPerfil.png";
 import "./Perfil.css";
 
-const Perfil = ({ usuarioConectado }) => {
-  const nomeUsuario = usuarioConectado?.nome || "";
+const Perfil = () => {
+
+  const usuarioConectado = JSON.parse(localStorage.getItem('usuarioConectado'));
+  const nomeUsuario = usuarioConectado?.nome || 'usuário';
 
   return (
     <div className="container-fluid mt-3">
