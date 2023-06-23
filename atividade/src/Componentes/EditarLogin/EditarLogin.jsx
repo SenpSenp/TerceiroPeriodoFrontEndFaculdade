@@ -3,12 +3,13 @@ import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Redirect } from 'react-router-dom';
+import './EditarLogin.css'
 
 const EditarCadastro = ({ handleHeaderAtualizado }) => {
   const usuarioConectado = JSON.parse(localStorage.getItem('usuarioConectado'));
   const nomeUsuario = usuarioConectado?.nome || 'usuário';
-  const usernameUsuario = usuarioConectado?.username || 'login';
-  const senhaUsuario = usuarioConectado?.password || 'senha';
+  const usernameUsuario = usuarioConectado?.username || 'Digite seu login desejado';
+  const senhaUsuario = usuarioConectado?.password || 'Digite sua senha desejada';
 
   const [DADOS, setDADOS] = useState({
     NOME: nomeUsuario,
@@ -66,35 +67,36 @@ const EditarCadastro = ({ handleHeaderAtualizado }) => {
   }
 
   return (
-    <div>
-      <h2>Editar Cadastro</h2>
+    <div className='Editar-Container'>
+      <h2 className='Editar-Titulo'>Editar Cadastro</h2>
       <form>
-        <label htmlFor="NOME">Nome:</label>
-        <input
+      <br/>
+        <label htmlFor="NOME" className='Editar-Info'>NOME</label>
+        <input className='Editar-Type'
           type="text"
           id="NOME"
           value={DADOS.NOME}
           onChange={(e) => setDADOS({ ...DADOS, NOME: e.target.value })}
-        />
+        /><br/>
 
-        <label htmlFor="USERNAME">Username:</label>
-        <input
+        <label htmlFor="USERNAME" className='Editar-Info'>USERNAME</label>
+        <input className='Editar-Type'
           type="text"
           id="USERNAME"
           value={DADOS.USERNAME}
           onChange={(e) => setDADOS({ ...DADOS, USERNAME: e.target.value })}
-        />
+        /><br/>
 
-        <label htmlFor="SENHA">Senha:</label>
-        <input
+        <label htmlFor="SENHA" className='Editar-Info'>SENHA</label>
+        <input className='Editar-Type'
           type="password"
           id="SENHA"
           value={DADOS.SENHA}
           onChange={(e) => setDADOS({ ...DADOS, SENHA: e.target.value })}
-        />
+        /><br/>
 
-        <button type="button" onClick={handleEditarCadastro}>
-          Editar
+        <button type="button" onClick={handleEditarCadastro} className='Editar-Botao'>
+          EDITAR
         </button>
       </form>
       <ToastContainer />

@@ -10,7 +10,7 @@ import { TelaEditarCadastro } from './Telas/EditarLogin/EditarLogin';
 
 const App = () => {
   const [usuarioConectado, setUsuarioConectado] = useState(null);
-  const [headerAtualizado, setHeaderAtualizado] = useState(false);
+  const [setHeaderAtualizado] = useState(false);
 
 
   const handleLogout = () => {
@@ -46,6 +46,8 @@ const App = () => {
         <PrivateRoute exact path="/perfil" component={TelaPerfil} />
         <PrivateRoute exact path="/editarcadastro" component={TelaEditarCadastro} usuarioConectado={usuarioConectado} handleHeaderAtualizado={handleHeaderAtualizado} />
       </Switch>
+
+      <Footer/>
     </Router>
   );
 };
