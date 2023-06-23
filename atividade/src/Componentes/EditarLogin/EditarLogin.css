@@ -1,0 +1,49 @@
+.Editar-Container {
+    border: 4px double black;
+    background-color: rgb(138, 165, 196);
+    box-shadow: 6px 6px 6px rgba(22, 21, 21, 0.258);
+    margin: 0 auto;
+    width: 90vw;
+    height: 150px, auto;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.Editar-Titulo {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.Editar-Info {
+    margin-left: 29vw;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Editar-Type {
+    margin-top: 10px;
+    display: flex;
+    margin-left: 29vw;
+    width: 30vw;
+    font-size: 20px;
+}
+
+.Editar-Botao {
+    border-radius: 10px 10px 10px 10px;
+    background-color: #00008b;
+    color: #ffa500;
+    border: none;
+    cursor: pointer;
+    width: 140px;
+    height: 50px;
+    font-size: large;
+    padding: 5px;
+    margin-left: 41vw;
+    margin-bottom: 15px;
+  }
+
+.Editar-Botao:hover {
+    color: #fff;
+}

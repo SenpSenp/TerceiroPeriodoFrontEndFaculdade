@@ -1,9 +1,12 @@
 import React from "react";
 import foto from "./foto/fotoPerfil.png";
 import "./Perfil.css";
+import { Link  } from "react-router-dom";
 
-const Perfil = ({ usuarioConectado }) => {
-  const nomeUsuario = usuarioConectado?.nome || "";
+const Perfil = () => {
+
+  const usuarioConectado = JSON.parse(localStorage.getItem('usuarioConectado'));
+  const nomeUsuario = usuarioConectado?.nome || 'usuário';
 
   return (
     <div className="container-fluid mt-3">
@@ -15,6 +18,10 @@ const Perfil = ({ usuarioConectado }) => {
               <p style={{ fontSize: "18px", fontWeight: "bold" }}>
                 Bem-vindo, {nomeUsuario}
               </p>
+
+              <Link to="/editarcadastro">
+                <button className="button-editar-cadastro">Editar Cadastro</button>
+              </Link>
             </div>
           </div>
         </div>
