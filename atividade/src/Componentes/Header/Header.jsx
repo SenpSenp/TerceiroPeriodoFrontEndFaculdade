@@ -60,10 +60,15 @@ const Header = ({ usuarioConectado, handleLogout }) => {
             Login
           </NavLink>
 
+
           <div className="search-container">
             <input type="text" placeholder="Pesquisar" />
             <button type="submit">Buscar</button>
           </div>
+
+          <NavLink to="/Cadastro" exact activeClassName="active">
+            Cadastro
+          </NavLink> 
         </div>
       );
     }

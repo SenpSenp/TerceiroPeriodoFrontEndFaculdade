@@ -6,6 +6,7 @@ import { TelaHome } from './Telas/Home/Home';
 import { TelaLogin } from './Telas/Login/Login';
 import TelaProduto from './Telas/Produto/Produto';
 import { TelaPerfil } from './Telas/Perfil/Perfil';
+import TelaCadastro from './Telas/Cadastro/Cadastro';
 
 const App = () => {
   const [usuarioConectado, setUsuarioConectado] = useState(null);
@@ -27,6 +28,7 @@ const App = () => {
         />
         <Route exact path="/produto/:id" component={TelaProduto} />
         <Route exact path="/perfil" component={TelaPerfil} />
+        <Route exact path="/cadastro" component={TelaCadastro} />
       </Switch>
 
       <Footer />
