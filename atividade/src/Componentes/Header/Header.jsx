@@ -79,6 +79,10 @@ const Header = ({ usuarioConectado, handleLogout, handleHeaderAtualizado }) => {
             <input type="text" placeholder="Pesquisar" />
             <button type="submit">Buscar</button>
           </div>
+
+          <NavLink to="/Cadastro" exact activeClassName="active">
+            Cadastro
+          </NavLink> 
         </div>
       );
     }
