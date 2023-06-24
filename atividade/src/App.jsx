@@ -8,6 +8,7 @@ import TelaProduto from './Telas/Produto/Produto';
 import { TelaPerfil } from './Telas/Perfil/Perfil';
 import { TelaEditarCadastro } from './Telas/EditarLogin/EditarLogin';
 import CadastroUsuario from './Telas/CadastroUsuario/CadastroUsuario';
+import CadastroProduto from './Telas/CadastroProduto/CadastroProduto';
 
 const App = () => {
   const [usuarioConectado, setUsuarioConectado] = useState(null);
@@ -46,7 +47,8 @@ const App = () => {
         <Route exact path="/produto/:id" component={TelaProduto} />
         <PrivateRoute exact path="/perfil" component={TelaPerfil} />
         <PrivateRoute exact path="/editarcadastro" component={TelaEditarCadastro} usuarioConectado={usuarioConectado} handleHeaderAtualizado={handleHeaderAtualizado} />
-        <Route exact path="/cadastro" component={CadastroUsuario} />
+        <Route exact path="/cadastrousuario" component={CadastroUsuario} />
+        <Route exact path="/cadastroproduto" component={CadastroProduto} />
       </Switch>
 
       <Footer/>
