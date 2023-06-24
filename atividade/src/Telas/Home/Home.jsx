@@ -13,6 +13,7 @@ export const TelaHome = () => {
         {products.map((product) => (
           <Card
             key={product.id}
+            id={product.id}
             texto={product.name}
             imagem={product.image}
             valor={product.price.toLocaleString('pt-BR')}

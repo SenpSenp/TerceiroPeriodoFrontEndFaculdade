@@ -17,9 +17,9 @@ const App = () => {
   };
 
   return (
+    <CarrinhoProvider>
     <Router>
       <Header usuarioConectado={usuarioConectado} handleLogout={handleLogout} />
-      <CarrinhoProvider>
       <Switch>
         <Route exact path="/" component={TelaHome} />
         <Route
@@ -31,10 +31,9 @@ const App = () => {
         <Route exact path="/perfil" component={TelaPerfil} />
         <Route exact path="/carrinho" component={Carrinho} /> {/* Adicionando a rota do Carrinho */}
         </Switch>
-        </CarrinhoProvider>
-
       <Footer />
     </Router>
+    </CarrinhoProvider>
   );
 };
 

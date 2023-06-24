@@ -1,17 +1,13 @@
 import Header from '../../Componentes/Header/Header';
-import ListaProdutosCarrinho from '../../Componentes/ListaProdutosCarrinho/ListaProdutosCarrinho';
 import { CarrinhoContext } from '../../Telas/Carrinhocompras/CarrinhoContext';
 import React, { useContext } from 'react';
+import ItemCarrinho from './../../Componentes/ItemCarrinho/ItemCarrinho';
 
 const Carrinho = () => {
-  const { carrinho } = useContext(CarrinhoContext);
+  const { carrinho, limparCarrinho } = useContext(CarrinhoContext);
 
-  // Função para calcular o total do carrinho
   const calcularTotal = () => {
-    let total = 0;
-    carrinho.forEach((produto) => {
-      total += produto.preco;
-    });
+    let total = carrinho.reduce((acc, produto) => acc + parseFloat(produto.valor), 0)
     return total;
   };
 
@@ -19,9 +15,20 @@ const Carrinho = () => {
     <div>
       <Header />
       <h1>Carrinho de Compras</h1>
-      <ListaProdutosCarrinho produtos={carrinho} />
       <div>
+        <div>
+          {
+            carrinho.length > 0 ? (
+              carrinho.map((produto) => {
+                return <ItemCarrinho id={produto.id} imagem={produto.imagem} texto={produto.texto} valor={produto.valor}/>
+              })
+            ) : (
+              <h1>O carrinho está vazio</h1>
+            )
+          }
+        </div>
         <h2>Total: R$ {calcularTotal()}</h2>
+        <button onClick={()=>limparCarrinho()}>Limpar Carrinho</button>
       </div>
       <div>
         {/* Botões para finalizar a compra, limpar o carrinho, etc. */}

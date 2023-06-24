@@ -49,3 +49,8 @@
 .caard-value span {
   color: red;
 }
+
+.caard span{
+  display: flex;
+  gap: 1rem;
+}
