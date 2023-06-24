@@ -45,31 +45,31 @@ const Cadastro = () => {
 
   return (
     <div className="cadastroContainer">
-      <h2>Cadastro de Usuário</h2>
-      <form className="cadastroForms"onSubmit={handleCadastro}>
+      <h2 className='Cadastro-h2'>Cadastro de Usuário</h2>
+      <form className="cadastroForms" onSubmit={handleCadastro}>
         <br />
-        <label>
+        <label className='Cadastro-label'>
           Nome de Usuário:
-          <input type="text" name="username" value={formData.username} onChange={handleChange} />
+          <input type="text" name="username" value={formData.username} onChange={handleChange} className='Cadastro-input' />
         </label>
         <br />
-        <label>
+        <label className='Cadastro-label'>
           Senha:
-          <input type="password" name="password" value={formData.password} onChange={handleChange} />
+          <input type="password" name="password" value={formData.password} onChange={handleChange} className='Cadastro-input' />
         </label>
         <br />
         <br />
-        <label>
+        <label className='Cadastro-label'>
           Nome:
-          <input type="text" name="nome" value={formData.nome} onChange={handleChange} />
+          <input type="text" name="nome" value={formData.nome} onChange={handleChange} className='Cadastro-input' />
         </label>
         <br />
-        <label>
+        <label className='Cadastro-label'>
           Token:
-          <input type="text" name="token" value={formData.token} onChange={handleChange} />
+          <input type="text" name="token" value={formData.token} onChange={handleChange} className='Cadastro-input' />
         </label>
         <br />
-        <button type="button" onClick={handleCadastro}>
+        <button type="button" onClick={handleCadastro} className='Cadastro-button'>
           Cadastrar
         </button>
       </form>
