@@ -1,7 +1,6 @@
-import React from 'react';
 import Header from '../../Componentes/Header/Header';
 import ListaProdutosCarrinho from '../../Componentes/ListaProdutosCarrinho/ListaProdutosCarrinho';
-import { CarrinhoContext } from '../Carrinhocompras/CarrinhoContext';
+import { CarrinhoContext } from '../../Telas/Carrinhocompras/CarrinhoContext';
 import React, { useContext } from 'react';
 
 const Carrinho = () => {
