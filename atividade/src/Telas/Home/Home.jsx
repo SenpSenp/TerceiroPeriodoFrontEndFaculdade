@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { CardContainer } from '../../Componentes/CardContainer/CardContainer';
 import { Carrossel } from '../../Componentes/Carrossel/Carrossel';
 import { Card } from '../../Componentes/Card/Card';
-import products from '../../json/products.json'; // Import the products data
 
 export const TelaHome = () => {
+  const [produtos, setProdutos] = useState([]);
+
+  useEffect(() => {
+    const fetchProdutos = async () => {
+      try {
+        const response = await fetch('http://localhost:4000/Products');
+        const data = await response.json();
+        setProdutos(data);
+      } catch (error) {
+        console.error('Erro ao obter os produtos:', error);
+      }
+    };
+
+    fetchProdutos();
+  }, []);
+
   return (
     <div>
       <Carrossel />
       <CardContainer>
-        {/* Map over the products array and create a Card component for each product */}
-        {products.map((product) => (
+        {produtos.map((product) => (
           <Card
             key={product.id}
             texto={product.name}
