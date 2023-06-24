@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 import headerImg from './headerImg/headerImg.png';
 import fotoPerfil from '../Perfil/foto/fotoPerfil.png';
+import carrinhoImg from './headerImg/carrinhoImg.png';
 
 const Header = ({ usuarioConectado, handleLogout }) => {
   const renderHeader = () => {
@@ -33,7 +34,7 @@ const Header = ({ usuarioConectado, handleLogout }) => {
 
           {/* Talvez pegar uma png de carrinho pra substituir a palavra  carrinho de compras */}
           <NavLink to="/carrinho" activeClassName="active">
-          Carrinho de Compras
+          <img className="imgc" src={carrinhoImg} alt="Img" />
           </NavLink>
 
           <p className="usuario">
@@ -66,7 +67,7 @@ const Header = ({ usuarioConectado, handleLogout }) => {
             </NavLink>
             
           <NavLink to="/carrinho" activeClassName="active">
-          Carrinho de Compras
+          <img className="imgc" src={carrinhoImg} alt="Img" />
           </NavLink>   
            
         

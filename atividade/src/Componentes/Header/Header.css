@@ -41,6 +41,12 @@
     width: 50px;
 }
 
+.imgc {
+  width: 40px;
+
+
+}
+
 .search-container {
     display: flex;
     align-items: center;
