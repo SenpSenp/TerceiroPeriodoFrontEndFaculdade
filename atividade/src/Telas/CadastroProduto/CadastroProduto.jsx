@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
 import './CadastroProduto.css';
-import products from '../../json/products.json'
 
 const CadastroProduto = () => {
   const nextIdRef = useRef(1);
@@ -34,7 +33,7 @@ const CadastroProduto = () => {
 
     console.log('Botão Cadastrar clicado');
     axios
-      .post('http://localhost:4000/products', formData)
+      .post('http://localhost:4000/Products', formData)
       .then((response) => {
         console.log('Dados de cadastro enviados com sucesso:', response.data);
       })
