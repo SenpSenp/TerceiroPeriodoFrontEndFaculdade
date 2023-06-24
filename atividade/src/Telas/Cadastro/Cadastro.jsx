@@ -1,33 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
-import "./Cadastro.css"
+import './Cadastro.css';
 
 const Cadastro = () => {
+  const nextIdRef = useRef(1);
+
   const [formData, setFormData] = useState({
+    id: '',
     username: '',
     password: '',
+    admin: false,
     nome: '',
     token: ''
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: value
+      [name]: type === 'checkbox' ? checked : value
     }));
   };
 
-  const handleCadastro = (e) => {
-    e.preventDefault();
-    // Aqui você pode implementar a lógica para enviar os dados de cadastro para o servidor
-    console.log('Dados de cadastro:', formData);
+  const handleCadastro = () => {
+    const nextId = nextIdRef.current;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      id: nextId
+    }));
+
+    nextIdRef.current += 1;
+
+    console.log('Botão Cadastrar clicado');
+    axios
+      .post('http://localhost:4000/usuarios', formData)
+      .then((response) => {
+        console.log('Dados de cadastro enviados com sucesso:', response.data);
+      })
+      .catch((error) => {
+        console.error('Erro ao enviar dados de cadastro:', error);
+      });
   };
 
   return (
-    <div className='cadastrocontainer'>
-      <h2>Tela de Cadastro</h2>
-      <form onSubmit={handleCadastro}>
+    <div className="cadastroContainer">
+      <h2>Cadastro de Usuário</h2>
+      <form className="cadastroForms"onSubmit={handleCadastro}>
         <br />
         <label>
           Nome de Usuário:
@@ -50,7 +69,9 @@ const Cadastro = () => {
           <input type="text" name="token" value={formData.token} onChange={handleChange} />
         </label>
         <br />
-        <button type="submit">Cadastrar</button>
+        <button type="button" onClick={handleCadastro}>
+          Cadastrar
+        </button>
       </form>
     </div>
   );
