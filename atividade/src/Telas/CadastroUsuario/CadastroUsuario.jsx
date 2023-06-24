@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
-import './Cadastro.css';
+import './CadastroUsuario.css';
 
-const Cadastro = () => {
+const CadastroUsuario = () => {
   const nextIdRef = useRef(1);
 
   const [formData, setFormData] = useState({
@@ -58,7 +58,6 @@ const Cadastro = () => {
           <input type="password" name="password" value={formData.password} onChange={handleChange} className='Cadastro-input' />
         </label>
         <br />
-        <br />
         <label className='Cadastro-label'>
           Nome:
           <input type="text" name="nome" value={formData.nome} onChange={handleChange} className='Cadastro-input' />
@@ -77,4 +76,4 @@ const Cadastro = () => {
   );
 };
 
-export default Cadastro;
+export default CadastroUsuario;
