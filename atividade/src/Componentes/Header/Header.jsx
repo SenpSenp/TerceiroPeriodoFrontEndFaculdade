@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './Header.css';
 import headerImg from './headerImg/headerImg.png';
 import fotoPerfil from '../Perfil/foto/fotoPerfil.png';
+import carrinhoImg from './headerImg/carrinhoImg.png';
 
 const Header = ({ usuarioConectado, handleLogout, handleHeaderAtualizado }) => {
   const [nomeUsuario, setNomeUsuario] = useState(usuarioConectado?.nome || 'usuário');
@@ -44,6 +45,10 @@ const Header = ({ usuarioConectado, handleLogout, handleHeaderAtualizado }) => {
             <button type="submit">Buscar</button>
           </div>
 
+          <NavLink to="/carrinho" activeClassName="active">
+          <img className="imgc" src={carrinhoImg} alt="Img" />
+          </NavLink>
+
           <NavLink to="/perfil" exact activeClassName="active">
             <img className="imgP" src={fotoPerfil} alt="Imagem" />
           </NavLink>
@@ -80,16 +85,22 @@ const Header = ({ usuarioConectado, handleLogout, handleHeaderAtualizado }) => {
             <img className="imgP" src={fotoPerfil} alt="Imagem" />
           </NavLink>
 
+
+          {/* Talvez pegar uma png de carrinho pra substituir a palavra  carrinho de compras */}
+          <NavLink to="/carrinho" activeClassName="active">
+          <img className="imgc" src={carrinhoImg} alt="Img" />
+          </NavLink>
+
           <p className="usuario">
             Bem-vindo, <br />
             {nomeUsuario}!
           </p>
-
           <div>
             <a href="/" className="sair-button" onClick={handleLogout}>
               Sair
             </a>
           </div>
+
         </div>
       );
     } else {
@@ -107,6 +118,10 @@ const Header = ({ usuarioConectado, handleLogout, handleHeaderAtualizado }) => {
             <input type="text" placeholder="Pesquisar" />
             <button type="submit">Buscar</button>
           </div>
+
+          <NavLink to="/produto" exact activeClassName="active">
+            Produto
+          </NavLink>
 
           <NavLink to="/cadastrousuario" exact activeClassName="active">
             Cadastro
