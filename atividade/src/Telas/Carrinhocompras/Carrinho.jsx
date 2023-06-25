@@ -1,4 +1,3 @@
-import Header from '../../Componentes/Header/Header';
 import { CarrinhoContext } from '../../Telas/Carrinhocompras/CarrinhoContext';
 import React, { useContext } from 'react';
 import ItemCarrinho from './../../Componentes/ItemCarrinho/ItemCarrinho';
@@ -13,7 +12,6 @@ const Carrinho = () => {
 
   return (
     <div>
-      <Header />
       <h1>Carrinho de Compras</h1>
       <div>
         <div>
