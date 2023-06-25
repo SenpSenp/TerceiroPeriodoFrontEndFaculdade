@@ -1,13 +1,20 @@
 import React, { useState, useContext } from 'react';
 import { CarrinhoContext } from './../../Telas/Carrinhocompras/CarrinhoContext';
 import { Row, Col, Image, Form, Button } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 import './ProductDetails.css';
 
 
 function ProductDetails({ product }) {
+  const history = useHistory();
+  
   const [quantity, setQuantity] = useState(1);
   const { adicionarAoCarrinho } = useContext(CarrinhoContext);
 
+    // will take you to a detail page with a id of product
+    function getProductDetails(product) {
+      return history.push(`/api/products/${product.id}`);
+    }
   function handleQuantityChange(e) {
     setQuantity(e.target.value);
   }
@@ -15,12 +22,18 @@ function ProductDetails({ product }) {
   function handleAddToCart() {
     adicionarAoCarrinho(product, quantity); 
   }
+    
 
   return (
     <div>
       <Row className="product-details">
       <Col xs={12} md={6} className="product-image-container">
-        <Image src={product.image} fluid className="product-image" />
+      <Image
+        src={product.image}
+        fluid
+        className="product-image"
+        
+      />
       </Col>
       <Col xs={12} md={6}>
         <h1 className="product-name">{product.name}</h1>
