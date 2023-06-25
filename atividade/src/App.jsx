@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Header from './Componentes/Header/Header';
 import Footer from './Componentes/Footer/Footer';
@@ -12,46 +12,74 @@ import CadastroProduto from './Telas/CadastroProduto/CadastroProduto';
 
 const App = () => {
   const [usuarioConectado, setUsuarioConectado] = useState(null);
-  const [setHeaderAtualizado] = useState(false);
 
+  useEffect(() => {
+    const usuarioSalvo = localStorage.getItem('usuarioConectado');
+
+    if (usuarioSalvo) {
+      setUsuarioConectado(JSON.parse(usuarioSalvo));
+    }
+  }, []);
 
   const handleLogout = () => {
     setUsuarioConectado(null);
+    localStorage.removeItem('usuarioConectado');
   };
 
-  const handleHeaderAtualizado = () => {
-    setHeaderAtualizado(true);
-  };
-  
-
-  const PrivateRoute = ({ component: Component, ...rest }) => (
+  const PrivateRouteConnected = ({ component: Component, ...rest }) => (
     <Route
       {...rest}
       render={props =>
         usuarioConectado ? (
           <Component {...props} />
         ) : (
-          <Redirect to="/login" />
+          <Redirect to="/" />
         )
       }
     />
   );
 
+  const PrivateRouteAdmin = ({ component: Component, ...rest }) => (
+    <Route
+      {...rest}
+      render={props =>
+        usuarioConectado && usuarioConectado.admin ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to="/" />
+        )
+      }
+    />
+  );
+
+  const PrivateRouteLogedIn = ({ component: Component, ...rest }) => (
+    <Route
+      {...rest}
+      render={props =>
+        usuarioConectado ? (
+          <Redirect to='/' />
+        ) : (
+          <Component {...props} />
+        )
+      }
+    />
+  );
   return (
     <Router>
-      <Header usuarioConectado={usuarioConectado} handleLogout={handleLogout}/>
+      <Header usuarioConectado={usuarioConectado} handleLogout={handleLogout} />
 
       <Switch>
         <Route exact path="/" component={TelaHome} />
         <Route exact path="/login" render={() => <TelaLogin setUsuarioConectado={setUsuarioConectado} />} />
         <Route exact path="/produto/:id" component={TelaProduto} />
-        <PrivateRoute exact path="/perfil" component={TelaPerfil} />
-        <PrivateRoute exact path="/editarcadastro" component={TelaEditarCadastro} usuarioConectado={usuarioConectado} handleHeaderAtualizado={handleHeaderAtualizado} />
-        <Route exact path="/cadastrousuario" component={CadastroUsuario} />
-        <Route exact path="/cadastroproduto" component={CadastroProduto} />
+        <PrivateRouteConnected exact path="/perfil" component={TelaPerfil} />
+        <PrivateRouteConnected exact path="/editarcadastro" component={TelaEditarCadastro} usuarioConectado={usuarioConectado} />
+        <PrivateRouteLogedIn exact path="/cadastrousuario" component={CadastroUsuario} />
+        <PrivateRouteAdmin exact path="/cadastroproduto" component={CadastroProduto} />
+        <Redirect to="/" />
       </Switch>
 
-      <Footer/>
+      <Footer />
     </Router>
   );
 };

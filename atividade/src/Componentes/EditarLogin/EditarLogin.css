@@ -1,49 +1,47 @@
-.Editar-Container {
-    border: 4px double black;
-    background-color: rgb(138, 165, 196);
-    box-shadow: 6px 6px 6px rgba(22, 21, 21, 0.258);
+.cadastroContainer {
+    max-width: 500px;
     margin: 0 auto;
-    width: 90vw;
-    height: 150px, auto;
-    align-items: flex-start;
-    margin-top: 10px;
-}
-
-.Editar-Titulo {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.Editar-Info {
-    margin-left: 29vw;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.Editar-Type {
-    margin-top: 10px;
-    display: flex;
-    margin-left: 29vw;
-    width: 30vw;
+    padding: 20px;
+    background-color: #202020;
+    margin-top: 100px;
+    border-radius: 10px;
+  }
+  
+  .cadastroForms{
+    margin-right: 5px;
+    text-align: center;
     font-size: 20px;
-}
-
-.Editar-Botao {
-    border-radius: 10px 10px 10px 10px;
-    background-color: #00008b;
     color: #ffa500;
+    margin-top: 20px;
+  }
+  
+  .Cadastro-h2 {
+    text-align: center;
+    color: #ffa500;
+  }
+  
+  .Cadastro-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .Cadastro-input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .Cadastro-button {
+    margin-left: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #00008b;
+    color: #fff;
     border: none;
     cursor: pointer;
-    width: 140px;
-    height: 50px;
-    font-size: large;
-    padding: 5px;
-    margin-left: 41vw;
-    margin-bottom: 15px;
+    border-radius: 10px;
   }
-
-.Editar-Botao:hover {
-    color: #fff;
-}
+  
+  .Cadastro-button:hover {
+    background-color: #00008b;
+  }

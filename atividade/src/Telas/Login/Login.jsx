@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useHistory } from 'react-router-dom';
@@ -9,6 +9,15 @@ export const TelaLogin = ({ setUsuarioConectado }) => {
   const [loginInvalido, setLoginInvalido] = useState(false);
 
   const history = useHistory();
+
+  useEffect(() => {
+    const usuarioSalvo = localStorage.getItem('usuarioConectado');
+
+    if (usuarioSalvo) {
+      setUsuarioConectado(JSON.parse(usuarioSalvo));
+      history.push('/');
+    }
+  }, []);
 
   const handleLogin = async () => {
     try {

@@ -4,85 +4,92 @@
       "nome": "Shrek, o ídolo da galera, aquele que nao dorme, faz o mundo entrar em blackout",
       "username": "admin",
       "password": "admin",
-      "id": 1
+      "id": 1,
+      "admin": true
     },
     {
       "nome": "John",
       "username": "J0hn",
       "password": "123",
-      "id": 2
+      "id": 2,
+      "admin": false
     },
     {
       "id": 3,
       "username": "M4ri4",
       "password": "123",
       "admin": false,
-      "nome": "Maria",
-      "token": "L6$3M#8*1F!2V@"
+      "nome": "Maria"
     },
     {
       "id": 4,
       "username": "R0b3rt",
       "password": "123",
       "admin": false,
-      "nome": "Robert",
-      "token": "9G#5S1$@6&*T3B"
+      "nome": "Robert"
     },
     {
       "id": 5,
       "username": "St3v3",
       "password": "123",
       "admin": false,
-      "nome": "Steve",
-      "token": "*N5B2$G@9#*!X6"
+      "nome": "Steve"
     },
     {
       "id": 6,
       "username": "Br14n",
       "password": "123",
       "admin": false,
-      "nome": "Brian",
-      "token": "1Q#3L*6@P4!D8F"
+      "nome": "Brian"
     },
     {
       "id": 7,
       "username": "K4th3ryn",
       "password": "123",
       "admin": false,
-      "nome": "Katheryn",
-      "token": "!4L#6*8@2D#P9R"
+      "nome": "Katheryn"
     },
     {
       "id": 8,
       "username": "R1ch4rd",
       "password": "123",
       "admin": false,
-      "nome": "Richard",
-      "token": "M7@2T1!8&*G#K4"
+      "nome": "Richard"
     },
     {
       "id": 9,
       "username": "Tr3v0r",
       "password": "123",
       "admin": false,
-      "nome": "Trevor",
-      "token": "$1A5#*6!2H@8M3"
+      "nome": "Trevor"
     },
     {
       "id": 10,
       "username": "Br3nd4",
       "password": "123",
       "admin": false,
-      "nome": "Brenda",
-      "token": "@8H3!5*9M$1P2"
+      "nome": "Brenda"
     },
     {
-      "id": 11,
+      "nome": "Admin secreto sem nome segredo shhhhhhhhhhh",
       "username": "",
       "password": "",
+      "admin": true,
+      "id": 11
+    },
+    {
+      "id": 12,
+      "username": "teste123",
+      "password": "teste123",
       "admin": false,
-      "nome": "Roger guedes, atacante mitologico",
-      "token": "@8H3!5*9M$1P2"
+      "nome": "teste123"
+    },
+    {
+      "id": 13,
+      "username": "teste1234",
+      "password": "teste1234",
+      "admin": true,
+      "nome": "teste1234"
     }
   ],
   "Products": [
@@ -158,7 +165,7 @@
     },
     {
       "id": 11,
-      "name": "Placa",
+      "name": "Shrek de Vídeo",
       "price": "1.99",
       "image": "https://cdn.discordapp.com/attachments/964651969845284956/1122248295570477087/2Q.png",
       "description": "ahaha"
