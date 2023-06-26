@@ -3,19 +3,19 @@ import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Card } from '../Card/Card';
+import { Row, Col } from 'react-bootstrap';
 
 //Comentários já realizados
 
 
-const Comentar = () => {
+const Comentar = ({idProduto}) => {
 
     const [comentarios, setComentarios] = useState([]);
 
   useEffect(() => {
     const fetchComentarios = async () => {
       try {
-        const response = await fetch('http://localhost:4000/comentarios');
+        const response = await fetch(`http://localhost:4000/comentarios?idProduto=${idProduto}`);
         const data = await response.json();
         setComentarios(data);
       } catch (error) {
@@ -58,7 +58,8 @@ const Comentar = () => {
       const novoComentario = {
         id: nextId,
         nome: formData.nome,
-        comentario: formData.comentario
+        comentario: formData.comentario,
+        idProduto:  idProduto
         
       };
 
@@ -93,48 +94,50 @@ const Comentar = () => {
   return (
     <div>
         <div className='sessaoComentarios'>
+        
+        <Row className="product-description-row">
+        <Col xs={12}>
         <h1>
-            Comentários do produto
+            Comentários do produto:
         </h1>
-        {comentarios.map((comentarios) => (
-            <div>
-            <h2 className='nomeComentario'>
-                {comentarios.nome}
-            </h2>
-            <p>
-                {comentarios.comentario}
-            </p>
-            </div>
-                
-        ))}
+
+            {comentarios.map((comentarios) => (
+                <div>
+                    <h2> {comentarios.nome} disse:</h2>
+                    <p className="product-description"> {comentarios.comentario}</p>
+                </div>
+            ))}
+        </Col>
+        
+      </Row>
         </div>
-        <div className="cadastroContainer">
-      <h2 className="Cadastro-h2">Caixa de comentário:</h2>
-      <form className="cadastroForms">
+        <div className="ComentarioContainer">
+      <h2 className="Comentario-h2">Caixa de comentário:</h2>
+      <form className="ComentarioForms">
         <br />
-        <label className="Cadastro-label">
+        <label className="Comentario-label">
           Nome Público:
           <input
             type="text"
             name="nome"
             value={formData.nome}
             onChange={handleChange}
-            className="Cadastro-input"
+            className="Comentario-input"
           />
         </label>
         <br />
-        <label className="Cadastro-label">
+        <label className="Comentario-label">
           Comentário:
           <input
             type="text"
             name="comentario"
             value={formData.comentario}
             onChange={handleChange}
-            className="Cadastro-input"
+            className="Comentario-input"
           />
         </label>
         <br />
-        <button type="button" onClick={handleCadastro} className="Cadastro-button">
+        <button type="button" onClick={handleCadastro} className="Comentario-button">
           Enviar comentário
         </button>
       </form>
