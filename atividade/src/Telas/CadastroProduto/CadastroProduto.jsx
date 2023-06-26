@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
 import './CadastroProduto.css';
+import { toast, ToastContainer } from 'react-toastify';
+import { Redirect } from 'react-router-dom';
 
 const CadastroProduto = () => {
   const nextIdRef = useRef(1);
@@ -14,6 +16,8 @@ const CadastroProduto = () => {
     description: ''
   });
 
+  const [redirectHome, setRedirectHome] = useState(false);
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevFormData) => ({
@@ -24,10 +28,21 @@ const CadastroProduto = () => {
 
   const handleCadastro = () => {
     const nextId = nextIdRef.current;
+
+    if (formData.name.length < 5 || formData.price.length === 0 || formData.description.length === 0) {
+      toast.error('Erro, Nome, Preço ou Description está vazio, por favor instira dados onde está faltando');
+      return;
+    }
     setFormData((prevFormData) => ({
       ...prevFormData,
       id: nextId
     }));
+
+    toast.success('Produto adicionado com sucesso!', {
+      onClose: () => {
+        setRedirectHome(true);
+      }
+    });
 
     nextIdRef.current += 1;
 
@@ -41,6 +56,10 @@ const CadastroProduto = () => {
         console.error('Erro ao enviar dados de cadastro:', error);
       });
   };
+
+  if (redirectHome) {
+    return <Redirect to="/" />;
+  }
 
   return (
     <div className="cadastroContainer">
@@ -71,6 +90,7 @@ const CadastroProduto = () => {
           Cadastrar
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };
