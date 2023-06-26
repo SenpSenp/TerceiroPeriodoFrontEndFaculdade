@@ -90,6 +90,13 @@
       "password": "teste1234",
       "admin": true,
       "nome": "teste1234"
+    },
+    {
+      "id": 14,
+      "username": "usuario",
+      "password": "usuario",
+      "admin": false,
+      "nome": "usuario"
     }
   ],
   "Products": [

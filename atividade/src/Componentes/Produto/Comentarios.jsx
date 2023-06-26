@@ -79,7 +79,7 @@ const Comentar = ({ idProduto }) => {
   };
 
   return (
-    <div>
+    <div className='branco'>
       <div className='sessaoComentarios'>
         <Row className="product-description-row">
           <Col xs={12}>
