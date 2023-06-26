@@ -26,7 +26,7 @@ export const Card = ({ id, imagem, texto, valor }) => {
 
   return (
     <div className="caard">
-      <img src={imagem} alt="Imagem do Produto" />
+      <img src={imagem} alt="Imagem do Produto" onClick={() => handleComprar(id)}/>
       <div className="caard-text">
         <p>{texto}</p>
         <p className="caard-value">R$: <span>{valor}</span></p>

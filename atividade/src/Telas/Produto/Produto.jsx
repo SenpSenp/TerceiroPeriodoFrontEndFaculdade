@@ -9,7 +9,7 @@ const TelaProduto = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/api/products/${id}`);
+        const response = await fetch(`http://localhost:4000/Products/${id}`);
         const data = await response.json();
         setProduct(data);
       } catch (error) {

@@ -16,6 +16,7 @@
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .caard-text {
