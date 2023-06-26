@@ -17,7 +17,7 @@ export const TelaLogin = ({ setUsuarioConectado }) => {
       setUsuarioConectado(JSON.parse(usuarioSalvo));
       history.push('/');
     }
-  }, []);
+  });
 
   const handleLogin = async () => {
     try {
@@ -45,22 +45,20 @@ export const TelaLogin = ({ setUsuarioConectado }) => {
   };
 
   return (
-    <div className="login-clContainerWrapper container-fluid">
-      <div className="card login-clContainer" style={{ width: '18rem' }}>
-        <h1 className="card-img-top" alt="...">LOGIN</h1>
-        <div className="card-body">
-          <div className="card-text d-flex flex-column">
-            <label>Login:</label>
-            <input type="text" value={form.login} onChange={(e) => setForm({ ...form, login: e.target.value })}></input>
+    <div className="cadastroContainer">
+        <h2 className="Cadastro-h2" alt="...">REALIZAR LOGIN</h2>
+        <form className="cadastroForms">
+            <label className='cadastro-label'>Login:</label>
+            <input type="text" value={form.login} onChange={(e) => setForm({ ...form, login: e.target.value })} className="Cadastro-input" />
             <br />
-            <label>Senha:</label>
-            <input type="password" value={form.senha} onChange={(e) => setForm({ ...form, senha: e.target.value })}></input>
+            <label Cadastro-label>Senha:</label>
+            <input type="password" value={form.senha} onChange={(e) => setForm({ ...form, senha: e.target.value })} className="Cadastro-input" />
             {loginInvalido && <p className="error-message">Erro! Login ou Senha inválidos</p>}
-          </div>
-          <button className="btn btn-primary login-btn" onClick={handleLogin}>Logar</button>
+            <br />
+          </form>
+          <button className="Cadastro-button" onClick={handleLogin}>Logar</button>
           <ToastContainer />
         </div>
-      </div>
-    </div>
+
   );
 };
