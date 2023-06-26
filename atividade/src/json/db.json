@@ -333,6 +333,12 @@
       "nome": "Onaga",
       "comentario": "Todos os Kamidogu são meus! Não roda GTA 4.",
       "idProduto": "8"
+    },
+    {
+      "id": 28,
+      "nome": "Darius",
+      "comentario": "Vou quebrar tudo! Não me fez ganhar a partida.",
+      "idProduto": "7"
     }
   ]
 }
