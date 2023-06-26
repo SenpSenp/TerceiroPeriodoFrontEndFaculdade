@@ -26,7 +26,7 @@
 .caard-button {
   margin-top: 10px;
   padding: 8px 16px;
-  background-color: #0080ff;
+  background-color: #00008b;
   color: white;
   border: none;
   border-radius: 4px;
@@ -34,7 +34,7 @@
 }
 
 .caard-button:hover {
-  background-color: #0066cc;
+  background-color: #00008b;
 }
 
 .caard-button:focus {
@@ -44,7 +44,7 @@
 .caard-value {
   font-size: 18px;
   font-weight: bold;
-  color: black;
+  color: #ffa500;
 }
 
 .caard-value span {

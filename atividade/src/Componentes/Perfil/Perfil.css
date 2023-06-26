@@ -1,129 +1,85 @@
-.container-fluid {
-  margin-top: 25px;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
-.card {
-  margin-bottom: 20px;
-  background-color: #f8f9fa;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  height: 250px; 
-}
-
-.card-body {
+.perfil-container {
+  background-color: #222;
+  color: #fff;
   padding: 20px;
+  margin-top: 40px;
 }
 
-.card-title {
+.perfil-container-1 {
+  height: 200px;
+}
+
+.perfil-container-2 {
+  height: 350px;
+}
+
+.perfil-container-3 {
+  height: auto;
+}
+
+.perfil-card {
+  height: 100%;
+}
+
+.perfil-foto {
+  width: 90px;
+}
+
+.perfil-nome {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
 }
 
-.card-text {
-  color: #555;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 10px;
-}
-
-.btn {
-  margin: 5px;
-  padding: 45px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.card-body table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 16px;
-}
-
-.card-body th,
-.card-body td {
-  padding: 5px;
-  text-align: center;
-  border: 1px solid #ccc;
-}
-
-.card-body th {
-  background-color: #f0f0f0;
-  font-weight: bold;
-}
-
-.card-body td {
+.perfil-button {
   background-color: #fff;
-}
-
-.btn-text {
-  margin: 15px;
-  float: right;
-  text-align: right;
-  font-size: 16px;
-  font-weight: bold; 
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn-text:hover {
-  background-color: #0056b3;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
-.btn:active {
-  background-color: #003c80;
-}
-
-.text1 {
-  text-align: left;
-  margin-left: 40px;
-}
-
-.btn-ver-todos-pedidos {
-  background-color: #007bff;
-  color: #fff;
+  color: #222;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-.btn-ver-todos-pedidos:hover {
-  background-color: #0056b3;
+.perfil-resumo {
+  margin-top: 20px;
 }
 
-.btn-ver-todos-pedidos:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
-}
-
-.btn-group-horizontal {
-  display: flex;
-  flex-direction: row;
-}
-
-.text1 {
+.perfil-titulo {
+  font-size: 20px;
   font-weight: bold;
 }
 
-.button-editar-cadastro {
-  font-size: 20px;
-  background-color: #00008b;
+.perfil-pedido,
+.perfil-endereco {
+  margin: 20px 0;
+}
+
+.perfil-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.perfil-table th,
+.perfil-table td {
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.perfil-ver-pedidos {
+  background-color: #fff;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
   cursor: pointer;
-  color: white;
+}
+
+.perfil-divisao3 {
+  margin-top: 20px;
+}
+
+.perfil-divisao3-titulo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.perfil-divisao3-conteudo {
+  font-size: 16px;
 }
