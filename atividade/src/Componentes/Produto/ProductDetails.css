@@ -1,3 +1,7 @@
+*{
+  color: white;
+}
+
 .product-details {
     padding: 2rem;
     border: 1px solid #eee;
@@ -87,4 +91,54 @@
     background-color: #fff;
     color: #f00;
     cursor: pointer;
+  }
+
+
+  .ComentarioContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #202020;
+    margin-top: 100px;
+    border-radius: 10px;
+  }
+  
+  .ComentarioForms{
+    margin-right: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: cadetblue;
+    margin-top: 20px;
+  }
+  
+  .Comentario-h2 {
+    text-align: center;
+    color: cadetblue;
+  }
+  
+  .Comentario-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .Comentario-input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .Comentario-button {
+    margin-left: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #00008b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .Comentario-button:hover {
+    background-color: #00008b;
   }

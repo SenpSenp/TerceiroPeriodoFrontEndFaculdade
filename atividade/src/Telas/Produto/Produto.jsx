@@ -33,7 +33,7 @@ const TelaProduto = () => {
     <div className="container">
       <ProductDetails product={product} />
       <div>
-      <Comentar />
+      <Comentar idProduto={id}/>
     </div>
     </div>
   );

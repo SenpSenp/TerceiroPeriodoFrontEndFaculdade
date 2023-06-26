@@ -174,9 +174,171 @@
   "Comentarios": [
     {
       "id": 1,
-      "idProduto": 1,
-      "nome": "João",
-      "comentario": "Aoba se deus quiser deu bom"
+      "nome": "Scorpion",
+      "comentario": "Get over here! A placa de vídeo é incrível!",
+      "idProduto": 1
+    },
+    {
+      "id": 2,
+      "idProduto": 2,
+      "nome": "Sub-Zero",
+      "comentario": "The cold never bothered me anyway. Excelente placa de vídeo!"
+    },
+    {
+      "id": 3,
+      "idProduto": 3,
+      "nome": "Liu Kang",
+      "comentario": "Fatality! Essa placa de vídeo é imbatível!"
+    },
+    {
+      "id": 4,
+      "idProduto": 4,
+      "nome": "Kitana",
+      "comentario": "For Edenia! A placa de vídeo superou minhas expectativas!"
+    },
+    {
+      "id": 5,
+      "idProduto": 5,
+      "nome": "Raiden",
+      "comentario": "I am the God of Thunder! Essa placa de vídeo é poderosa!"
+    },
+    {
+      "id": 6,
+      "idProduto": 6,
+      "nome": "Mileena",
+      "comentario": "Tasty! Essa placa de vídeo é deliciosa para jogos!"
+    },
+    {
+      "id": 7,
+      "idProduto": 7,
+      "nome": "Kung Lao",
+      "comentario": "Flawless Victory! A placa de vídeo proporciona uma experiência perfeita!"
+    },
+    {
+      "id": 8,
+      "idProduto": 8,
+      "nome": "Johnny Cage",
+      "comentario": "I'm a star! Essa placa de vídeo ilumina qualquer jogo!"
+    },
+    {
+      "id": 9,
+      "idProduto": 9,
+      "nome": "Sonya Blade",
+      "comentario": "Kombat Time! Com essa placa de vídeo, você estará sempre pronta para a ação!"
+    },
+    {
+      "id": 10,
+      "idProduto": 10,
+      "nome": "Jax Briggs",
+      "comentario": "Bring the beatdown! A placa de vídeo proporciona desempenho incrível!"
+    },
+    {
+      "id": 11,
+      "idProduto": 11,
+      "nome": "Cassie Cage",
+      "comentario": "I'm all that! Essa placa de vídeo é uma verdadeira campeã!"
+    },
+    {
+      "id": 12,
+      "idProduto": 12,
+      "nome": "Shang Tsung",
+      "comentario": "Your soul is mine! Essa placa de vídeo domina o desempenho!"
+    },
+    {
+      "id": 13,
+      "idProduto": 13,
+      "nome": "Kano",
+      "comentario": "I'm a ripper, baby! Essa placa de vídeo arrasa em qualquer jogo!"
+    },
+    {
+      "id": 14,
+      "idProduto": 14,
+      "nome": "Frost",
+      "comentario": "Freeze and obey! Essa placa de vídeo oferece gráficos incríveis!"
+    },
+    {
+      "id": 15,
+      "idProduto": 15,
+      "nome": "Noob Saibot",
+      "comentario": "You will know fear! A placa de vídeo proporciona uma experiência aterrorizante!"
+    },
+    {
+      "id": 16,
+      "idProduto": 16,
+      "nome": "Baraka",
+      "comentario": "Tarkatan power! Essa placa de vídeo é brutalmente eficiente!"
+    },
+    {
+      "id": 17,
+      "idProduto": 17,
+      "nome": "Shao Kahn",
+      "comentario": "Bow to me! Essa placa de vídeo é digna de um verdadeiro imperador!"
+    },
+    {
+      "id": 18,
+      "idProduto": 18,
+      "nome": "Goro",
+      "comentario": "I am the Prince of Pain! A placa de vídeo esmaga a concorrência!"
+    },
+    {
+      "id": 19,
+      "idProduto": 19,
+      "nome": "Erron Black",
+      "comentario": "Quick draw! Essa placa de vídeo oferece um desempenho rápido e eficiente!"
+    },
+    {
+      "id": 20,
+      "idProduto": 20,
+      "nome": "Jade",
+      "comentario": "Feel my sting! A placa de vídeo é poderosa e elegante!"
+    },
+    {
+      "id": 21,
+      "idProduto": 21,
+      "nome": "Kabal",
+      "comentario": "Breathe! Essa placa de vídeo vai te deixar sem fôlego com seu desempenho!"
+    },
+    {
+      "id": 22,
+      "idProduto": 22,
+      "nome": "Kotal Kahn",
+      "comentario": "Osh-Tekk might! Essa placa de vídeo é poderosa como um deus!"
+    },
+    {
+      "id": 23,
+      "idProduto": 23,
+      "nome": "Rain",
+      "comentario": "Feel the storm! A placa de vídeo oferece uma experiência visual impressionante!"
+    },
+    {
+      "id": 24,
+      "idProduto": 24,
+      "nome": "Cetrion",
+      "comentario": "Nature calls! Essa placa de vídeo é poderosa como os elementos!"
+    },
+    {
+      "id": 25,
+      "idProduto": 25,
+      "nome": "D'Vorah",
+      "comentario": "Buzz, buzz! A placa de vídeo vai te envolver em seu desempenho excepcional!"
+    },
+    {
+      "id": 26,
+      "nome": "Reiko",
+      "comentario": "Damn'it Shao Kahn! Achei a placa fraca!",
+      "idProduto": "1"
+    },
+    {
+      "id": 27,
+      "nome": "Onaga",
+      "comentario": "Todos os Kamidogu são meus! Não roda GTA 4.",
+      "idProduto": "8"
+    },
+    {
+      "id": 28,
+      "nome": "Darius",
+      "comentario": "Vou quebrar tudo! Não me fez ganhar a partida.",
+      "idProduto": "7"
     }
   ]
 }
