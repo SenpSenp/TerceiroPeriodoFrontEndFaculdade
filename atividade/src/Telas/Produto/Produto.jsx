@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ProductDetails from '../../Componentes/Produto/ProductDetails';
+import Comentar from '../../Componentes/Produto/Comentarios';
 
 const TelaProduto = () => {
   const { id } = useParams();
@@ -24,9 +25,16 @@ const TelaProduto = () => {
     return <div>Loading...</div>;
   }
 
+  //Comentários
+
+    
+
   return (
     <div className="container">
       <ProductDetails product={product} />
+      <div>
+      <Comentar />
+    </div>
     </div>
   );
 };

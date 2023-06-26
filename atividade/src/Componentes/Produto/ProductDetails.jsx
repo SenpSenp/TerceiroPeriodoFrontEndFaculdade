@@ -2,8 +2,11 @@ import React, { useState, useContext } from 'react';
 import { CarrinhoContext } from './../../Telas/Carrinhocompras/CarrinhoContext';
 import { Row, Col, Image, Form, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
-import { toast, ToastContainer} from 'react-toastify'
+import { toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './ProductDetails.css';
+
+
 
 function ProductDetails({ product }) {
   const history = useHistory();
@@ -20,7 +23,8 @@ function ProductDetails({ product }) {
     toast('Adicionado com sucesso')
   }
 
-  
+
+
   return (
     <div>
       <Row className="product-details">
@@ -57,8 +61,10 @@ function ProductDetails({ product }) {
         </Col>
       </Row>
     </div>
+
   );
   
 }
 
 export default ProductDetails;
+

@@ -170,5 +170,13 @@
       "image": "https://cdn.discordapp.com/attachments/964651969845284956/1122248295570477087/2Q.png",
       "description": "ahaha"
     }
+  ],
+  "Comentarios": [
+    {
+      "id": 1,
+      "idProduto": 1,
+      "nome": "João",
+      "comentario": "Aoba se deus quiser deu bom"
+    }
   ]
 }
