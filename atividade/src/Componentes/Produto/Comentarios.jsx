@@ -36,8 +36,17 @@ const Comentar = ({ idProduto }) => {
     }));
   };
 
+  const verificarDados = async () => {
+    if (formData.nome.length < 5 || formData.comentario.length < 5) {
+      throw new Error('Username e senha devem ter no mínimo 5 caracteres');
+    }
+    };
+
+
   const handleCadastro = async () => {
     try {
+      await verificarDados();
+
       const response = await axios.get('http://localhost:4000/comentarios');
       const comentarios = response.data;
 
