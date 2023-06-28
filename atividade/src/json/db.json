@@ -78,20 +78,6 @@
       "id": 11
     },
     {
-      "id": 12,
-      "username": "teste123",
-      "password": "teste123",
-      "admin": false,
-      "nome": "teste123"
-    },
-    {
-      "id": 13,
-      "username": "teste1234",
-      "password": "teste1234",
-      "admin": true,
-      "nome": "teste1234"
-    },
-    {
       "id": 14,
       "username": "usuario",
       "password": "usuario",
@@ -176,6 +162,13 @@
       "price": "1.99",
       "image": "https://cdn.discordapp.com/attachments/964651969845284956/1122248295570477087/2Q.png",
       "description": "ahaha"
+    },
+    {
+      "id": 12,
+      "name": "Notebook que esqueceram na biblioteca e nao vieram buscar depois de 1 ano",
+      "price": "1550.98",
+      "image": "https://images-americanas.b2w.io/produtos/01/00/item/111063/8/111063899_1GG.jpg",
+      "description": "Notebook que foi esquecido na faculdade e nao vieram buscar, está bloqueado, precisa de saber de ser hacker para poder desbloquear e usar"
     }
   ],
   "Comentarios": [

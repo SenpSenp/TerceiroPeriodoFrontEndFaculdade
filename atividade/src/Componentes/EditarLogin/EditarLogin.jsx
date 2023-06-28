@@ -65,6 +65,32 @@ const EditarCadastro = ({ handleHeaderAtualizado }) => {
     }
   };
 
+  const HandleDeletarCadastro = async () => {
+    try {
+      const confirmed = window.confirm('Tem certeza que deseja deletar o cadastro?');
+  
+      if (!confirmed) {
+        return;
+      }
+  
+      const { id } = usuarioConectado;
+      const url = `http://localhost:4000/usuarios/${id}`;
+  
+      await axios.delete(url);
+  
+      localStorage.removeItem('usuarioConectado');
+  
+      toast.success('Cadastro deletado com sucesso!', {
+        onClose: () => {
+          window.location.reload();
+        }
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
+
   if (redirectPerfil) {
     return <Redirect to="/perfil" />;
   }
@@ -100,6 +126,10 @@ const EditarCadastro = ({ handleHeaderAtualizado }) => {
 
         <button type="button" onClick={handleEditarCadastro} className='Cadastro-button'>
           EDITAR
+        </button>
+        <br/>
+        <button type='button' onClick={HandleDeletarCadastro} className='Cadastro-button'>
+          DELETAR PERFIL
         </button>
       </form>
       <ToastContainer />
