@@ -8,11 +8,11 @@ const ItemCarrinho = ({id, imagem, texto, valor}) => {
     console.log(carrinho)
 
     return(
-        <div id='Item'>
+        <div id='Item' className='carrinho-itens'>
             <img src={imagem}/>
-            <h1>{texto}</h1>
-            <h1>{valor}</h1>
-            <button onClick={()=>removerDoCarrinho(id)}>Remover</button>
+            <h1 className='texto'>{texto}</h1>
+            <h1 className='valor'>R$: {valor}</h1>
+            <button onClick={()=>removerDoCarrinho(id)} className='right'>Remover</button>
         </div>
     )
 }

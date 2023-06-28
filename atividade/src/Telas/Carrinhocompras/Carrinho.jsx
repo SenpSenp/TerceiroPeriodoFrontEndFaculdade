@@ -1,34 +1,44 @@
 import { CarrinhoContext } from '../../Telas/Carrinhocompras/CarrinhoContext';
 import React, { useContext } from 'react';
 import ItemCarrinho from './../../Componentes/ItemCarrinho/ItemCarrinho';
+import './Carrinho.css'
 
 const Carrinho = () => {
   const { carrinho, limparCarrinho } = useContext(CarrinhoContext);
 
   const calcularTotal = () => {
-    let total = carrinho.reduce((acc, produto) => acc + parseFloat(produto.valor), 0)
+    let total = carrinho.reduce(
+      (acc, produto) => acc + parseFloat(produto.valor),
+      0
+    );
     return total;
   };
 
   return (
-    <div>
-      <h1>Carrinho de Compras</h1>
-      <div>
-        <div>
-          {
-            carrinho.length > 0 ? (
-              carrinho.map((produto) => {
-                return <ItemCarrinho id={produto.id} imagem={produto.imagem} texto={produto.texto} valor={produto.valor}/>
-              })
-            ) : (
-              <h1>O carrinho está vazio</h1>
-            )
-          }
+    <div className="carrinhoContainer">
+      <h1 className="carrinho-title">Carrinho de Compras</h1>
+      <div className="carrinho-content">
+        <div className="carrinho-items">
+          {carrinho.length > 0 ? (
+            carrinho.map((produto) => (
+              <ItemCarrinho
+                key={produto.id}
+                id={produto.id}
+                imagem={produto.imagem}
+                texto={produto.texto}
+                valor={produto.valor}
+              />
+            ))
+          ) : (
+            <h1 className="carrinho-title">O carrinho está vazio</h1>
+          )}
         </div>
-        <h2>Total: R$ {calcularTotal()}</h2>
-        <button onClick={()=>limparCarrinho()}>Limpar Carrinho</button>
+        <h2 className="carrinho-total">Total: R$ {calcularTotal()}</h2>
+        <button className="carrinho-limpar" onClick={limparCarrinho}>
+          Limpar Carrinho
+        </button>
       </div>
-      <div>
+      <div className="carrinho-actions">
         {/* Botões para finalizar a compra, limpar o carrinho, etc. */}
       </div>
     </div>

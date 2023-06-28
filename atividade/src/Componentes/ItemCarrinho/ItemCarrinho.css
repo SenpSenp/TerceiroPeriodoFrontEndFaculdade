@@ -10,3 +10,33 @@
 #Item img{
     height: 100%;
 }
+
+.valor {
+    margin: right;
+    color: red;
+}
+
+.carrinho-itens {
+        margin-right: 5px;
+        text-align: center;
+        font-size: 18px;
+        color: #ffa500;
+        margin-top: 20px;
+}
+
+.right {
+    position: absolute;
+    right: 15vw;
+    transform: translateY(-50%);
+    background-color: #00008b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+}
+
+.texto {
+    color: white;
+}
