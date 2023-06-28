@@ -26,7 +26,7 @@ function ProductDetails({ product }) {
 
 
   return (
-    <div>
+    <div className='branco'>
       <Row className="product-details">
         <Col xs={12} md={6} className="product-image-container">
           <Image src={product.image} fluid className="product-image" />
@@ -48,8 +48,7 @@ function ProductDetails({ product }) {
           <Button
             variant="primary"
             onClick={() => handleAddCart(product)}
-            className="product-button"
-          >
+            className="product-button" >
             Adicionar ao carrinho
           </Button>
         </Col>

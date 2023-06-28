@@ -45,12 +45,12 @@ const Header = ({ usuarioConectado, handleLogout, handleHeaderAtualizado }) => {
             <button type="submit">Buscar</button>
           </div>
 
-          <NavLink to="/carrinho" activeClassName="active">
-          <img className="imgc" src={carrinhoImg} alt="Img" />
-          </NavLink>
-
           <NavLink to="/perfil" exact activeClassName="active">
             <img className="imgP" src={fotoPerfil} alt="Imagem" />
+          </NavLink>
+          
+          <NavLink to="/carrinho" activeClassName="active">
+          <img className="imgc" src={carrinhoImg} alt="Img" />
           </NavLink>
 
           <p className="usuario">
