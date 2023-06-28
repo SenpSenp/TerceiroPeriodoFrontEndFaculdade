@@ -82,8 +82,8 @@ const Comentar = ({ idProduto }) => {
 
       fetchComentarios();
     } catch (error) {
-      console.error('Erro ao cadastrar:', error.message);
-      toast.error('Erro no cadastro. Verifique os dados e tente novamente.');
+      console.error('Erro ao comentar:', error.message);
+      toast.error('Erro no comentário. O nome e o comentário necessitam de pelo menos 5 caracteres cada.');
     }
   };
 
